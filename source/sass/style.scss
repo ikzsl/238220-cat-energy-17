@@ -13,10 +13,14 @@
 @import "blocks/social.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/catalog.scss";
+@import "blocks/item-card.scss";
+@import "blocks/properties.scss";
+@import "blocks/show-all.scss";
+
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: yellow;
+  background-color: ffffff;
 }
 
 a {
@@ -24,10 +28,7 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
