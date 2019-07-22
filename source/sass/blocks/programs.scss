@@ -8,7 +8,7 @@
 }
 
 .programs__headline {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
 
   font-size: 36px;
   line-height: 36px;
@@ -17,7 +17,7 @@
 }
 
 .programs__slogan {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;

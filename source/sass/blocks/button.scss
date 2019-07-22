@@ -5,9 +5,10 @@
 
   text-align: center;
   text-transform: uppercase;
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
   font-size: 16px;
   line-height: 20px;
+  min-width: 280px;
 
   &--grey {
     background-color: #f2f2f2;

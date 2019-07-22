@@ -1,32 +1,42 @@
 .program-item {
-  background-color: #f2f2f2;
+  background-color: $bg-grey;
   padding: 20px;
   margin: 20px;
 }
 
 .program-item__title {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
-  color: #111111;
-  margin: 0;
+  @include program_title {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-item__title {
+    font-size: 36px;
+  }
 }
 
 .program-item__desc {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  @include content {}
 }
+
+@media (min-width: $tablet-width) {
+  .program-item__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 
 .program-item__link {
   display: block;
   padding-top: 20px;
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   color: #111111;
   border-top: 1px solid #dadada;
 }
+
+
