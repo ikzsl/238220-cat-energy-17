@@ -12,21 +12,21 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    width: $tablet-width;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width;
     position: absolute;
+    margin: 65px auto;
+
     background-color: transparent;
   }
 }
 
 .page-header__logo {
   align-self: flex-start;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -35,10 +35,7 @@
   }
 }
 
-
-
 .page-header__logo-image {
   padding: 11px 0;
   vertical-align: center;
-
 }

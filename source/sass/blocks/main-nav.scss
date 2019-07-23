@@ -6,13 +6,9 @@
 
 
 
-.main-nav__label {
-
-}
-
 .main-nav__label::after {
   position: absolute;
-content: "";
+  content: "";
   display: block;
   right: 20px;
   top: -40px;
@@ -23,7 +19,7 @@ content: "";
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle {
+  .main-nav__label {
     display: none;
   }
 }

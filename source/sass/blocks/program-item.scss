@@ -17,7 +17,8 @@
 }
 
 .program-item__desc {
-  @include content {}
+  @include content {
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,7 +27,6 @@
     line-height: 24px;
   }
 }
-
 
 .program-item__link {
   display: block;
@@ -38,5 +38,3 @@
   color: #111111;
   border-top: 1px solid #dadada;
 }
-
-
