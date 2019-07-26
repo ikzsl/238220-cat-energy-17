@@ -18,10 +18,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: absolute;
-    margin: 65px auto;
+    position: relative;
+
 
     background-color: transparent;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
