@@ -52,14 +52,16 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    font-family: $font-head;
     font-size: 20px;
-    line-height: 25px;
-    min-width: 50px;
-    color: $white;
 
     padding: 5px 0;
     border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page .site-list__item {
+    color: $white;
 
     &--active {
       border-bottom: 2px solid $white;
