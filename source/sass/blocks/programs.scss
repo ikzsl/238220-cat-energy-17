@@ -159,6 +159,8 @@
   .programs__list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
