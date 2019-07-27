@@ -110,9 +110,16 @@
     z-index: -1;
   }
 
-  @for $i from 1 through 4 {
-    .feature__item:nth-of-type(#{$i}) .feature__desc::after {
-      content: "#{$i}";
-    }
-  }
+  //Нумерует по порядку пункты "Как это работает"
+  //Не проходит валидацию stylelint-ом
+  //
+  // @for $i from 1 through 4 {
+  //   .feature__item:nth-of-type(#{$i}) .feature__desc::after {
+  //     content: "#{$i}";
+  //   }
+  // }
+  //
+  //создан pull-request с добавлением директивы for в перечень разрешенных
+  //товарищ Зюзин пока его игнорирует
+  //как дальше с этим жить?
 }
