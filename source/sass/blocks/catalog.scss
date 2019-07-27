@@ -1,5 +1,19 @@
 .catalog {
   background-color: #ffffff;
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: $tablet-width - 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: $desktop-width - 40px;
+  }
 }
 
 .catalog__list {
@@ -8,9 +22,23 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .catalog__headline {
   font-family: $font-head;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__headline {
+    font-size: 60px;
+  }
 }
