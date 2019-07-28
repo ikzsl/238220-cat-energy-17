@@ -3,4 +3,16 @@
   font-size: 12px;
   line-height: 16px;
   color: #111111;
+  width: 100%;
+}
+
+.properties__value {
+  text-align: right;
+}
+
+.properties__field td {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 10px;
 }
