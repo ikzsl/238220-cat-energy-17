@@ -6,13 +6,15 @@
   justify-content: space-between;
   align-items: center;
   width: 320px;
-  margin: 0 auto;
+  margin: 0px auto;
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    width: 100%;
+    min-width: 708px;
+    
   }
 }
 
@@ -20,24 +22,27 @@
   .page-header {
     position: relative;
 
-
     background-color: transparent;
-    max-width: 1220px;
+    width: 1220px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
 
 .page-header__logo {
   align-self: flex-start;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    align-self: center;
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
   }
 }
 
-.page-header__logo-image {
-  padding: 11px 0;
-  vertical-align: center;
-}
+
