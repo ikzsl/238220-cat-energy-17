@@ -19,7 +19,6 @@ $desktop-width: 1200px;
   font-family: $font-head;
   font-weight: 400;
   text-transform: uppercase;
-
 }
 
 @mixin content {
@@ -27,5 +26,4 @@ $desktop-width: 1200px;
   line-height: 18px;
   color: #444444;
   font-family: $font-content;
-
 }

@@ -71,7 +71,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+
     min-height: 230px;
     width: 200px;
     counter-increment: item;
@@ -81,7 +81,6 @@
 
     padding: 0;
     margin-bottom: 90px;
-
 
     &::before {
       position: absolute;

@@ -121,13 +121,11 @@
     margin-left: 142px;
     padding: 16px 0;
     width: 245px;
-
-
   }
 }
 
 .programs__wrapper {
-  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px;
@@ -207,6 +205,7 @@
     width: 1200px;
     margin: 0 auto;
   }
+
   .programs__list-item {
     margin: 0;
   }
