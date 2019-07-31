@@ -6,8 +6,9 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #cdcdcd;
-  padding-top: 25px;
+  padding-top: 15px;
   cursor: pointer;
+  width: 286px;
 
   & svg {
     fill: #444444;
@@ -31,6 +32,7 @@
   .copyright {
     border-top: none;
     padding-top: 0;
+    width: 170px;
   }
 }
 

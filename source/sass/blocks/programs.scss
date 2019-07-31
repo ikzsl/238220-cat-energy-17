@@ -1,3 +1,15 @@
+.programs {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs{
+
+    margin-bottom: 44px;
+  }
+}
+
+
 .programs__header {
   display: flex;
   flex-direction: column;
@@ -9,6 +21,7 @@
   .programs__header {
     width: 100%;
     align-items: flex-start;
+    margin: 0;
   }
 }
 
@@ -45,8 +58,8 @@
     text-align: left;
     min-width: 450px;
     margin: 0;
-    margin-left: 25%;
-    margin-bottom: 30px;
+    margin-left: 15vw;
+    margin-bottom: 40px;
   }
 }
 
@@ -58,7 +71,7 @@
     text-align: left;
 
     margin: 0;
-    margin-left: 140px;
+    margin-left: 80px;
     margin-bottom: 42px;
   }
 }
@@ -77,18 +90,14 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-left: 25%;
+    margin-left: 15vw;
     margin-bottom: 45px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .programs__slogan {
-    color: #111111;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-    margin-left: 142px;
+    margin-left: 80px;
     margin-bottom: 52px;
   }
 }
@@ -105,22 +114,22 @@
 
 @media (min-width: $tablet-width) {
   .programs__choose {
+    font-size: 20px;
+    line-height: 20px;
     bottom: 0;
     margin: 0;
     z-index: 10;
     min-width: 225px;
-    margin-left: 25%;
+    margin-left: 15vw;
+    padding: 16px 0;
+    width: 245px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__choose {
-    font-size: 20px;
-    line-height: 20px;
     margin: 0;
-    margin-left: 142px;
-    padding: 16px 0;
-    width: 245px;
+    margin-left: 80px;
   }
 }
 
@@ -157,12 +166,22 @@
 
 @media (min-width: $tablet-width) {
   .programs__can {
-    margin-top: 130px;
+line-height: 0;
+margin: 0;
+font-size: 0;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .programs__can img {
+    margin-top: -22px;
+
+  }
+}
+
+
 @media (min-width: $desktop-width) {
-  .programs__can {
+  .programs__can img {
     align-self: center;
     margin-top: 150px;
     margin-left: -160px;
@@ -172,8 +191,9 @@
 
 @media (min-width: $tablet-width) {
   .programs__image-container {
-    margin-top: -55px;
+    margin-top: -58px;
     align-self: center;
+
   }
 }
 
@@ -182,7 +202,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
 
     background-repeat: no-repeat;
-
+    width: 50vw;
     background-size: cover;
     background-color: #65a93c;
     align-self: stretch;
@@ -195,6 +215,8 @@
 .programs__list {
   margin: 0;
   padding: 0;
+  margin-bottom: 2px;
+
 }
 
 @media (min-width: $desktop-width) {
@@ -202,11 +224,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: $desktop-width;
     margin: 0 auto;
+    margin-bottom: 75px;
   }
 
   .programs__list-item {
     margin: 0;
+
   }
 }

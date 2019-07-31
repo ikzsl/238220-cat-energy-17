@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 38px 0;
+  }
+}
+
 .page-footer__copyright {
   align-self: stretch;
 }
@@ -32,7 +38,8 @@
 
   text-align: center;
   border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
+  padding-top: 20px;
   cursor: pointer;
 
   &:hover img {
@@ -48,10 +55,22 @@
   .page-footer__logo {
     border: none;
     align-self: center;
+    padding: 40px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
     padding: 0;
   }
 }
 
 .page-footer__social {
-  padding: 22px;
+  padding: 21px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social {
+    padding-left: 36px;
+  }
 }
