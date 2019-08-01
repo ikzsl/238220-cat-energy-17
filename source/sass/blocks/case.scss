@@ -1,0 +1,26 @@
+.case {
+  background-color: #f2f2f2;
+  margin-bottom: 78px;
+}
+
+@media (min-width: $tablet-width) {
+  .case {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case {
+    margin-bottom: 0;
+  }
+}
+
+.case__headline {
+  font-family: $font-head;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.case__desc {
+  @include content;
+}

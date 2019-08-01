@@ -4,14 +4,16 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  counter-reset: item;
 }
 
 @media (min-width: $tablet-width) {
   .feature {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    align-content: flex-end;
   }
 }
 
@@ -25,9 +27,9 @@
   position: relative;
   font-family: "Arial", sans-serif;
   color: #444444;
-  font-style: 14px;
+  font-size: 14px;
   line-height: 18px;
-  padding: 0 20px 30px 100px;
+  padding: 0 0 26px 80px;
   min-height: 40px;
   background-color: transparent;
   z-index: 2;
@@ -42,6 +44,7 @@
     width: 60px;
     height: 60px;
     left: 0;
+    top: -2px;
   }
 
   &--useful::before {
@@ -68,14 +71,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+
     min-height: 230px;
+    width: 324px;
+    counter-increment: item;
 
-    flex-grow: 1;
+    padding: 68px 70px 0 0;
+    margin-bottom: 88px;
 
-    padding: 0;
-    margin-bottom: 90px;
-    padding-left: 20px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       position: absolute;
@@ -84,42 +89,34 @@
 
       background-repeat: no-repeat;
       background-position: center;
-      width: 60px;
-      height: 60px;
-      left: 20px;
+      width: 80px;
+      height: 80px;
+      left: 0;
       top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: counter(item);
+
+      color: #f2f2f2;
+      font-size: 281px;
+      font-family: $font-head;
+      top: 90px;
+      left: 110px;
+      width: 20px;
+      height: 20px;
+      z-index: -1;
     }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .feature__desc {
-    width: 250px;
+@media (min-width: $desktop-width) {
+  .feature__item {
+    min-height: 230px;
+    width: 245px;
+    padding: 0;
+    padding-top: 65px;
+    margin-bottom: 0;
   }
-
-  .feature__desc::after {
-    position: absolute;
-    content: "0";
-    color: #f2f2f2;
-    font-size: 281px;
-    font-family: $font-head;
-    top: 90px;
-    left: 100px;
-    width: 20px;
-    height: 20px;
-    z-index: -1;
-  }
-
-  //Нумерует по порядку пункты "Как это работает"
-  //Не проходит валидацию stylelint-ом
-  //
-  // @for $i from 1 through 4 {
-  //   .feature__item:nth-of-type(#{$i}) .feature__desc::after {
-  //     content: "#{$i}";
-  //   }
-  // }
-  //
-  //создан pull-request с добавлением директивы for в перечень разрешенных
-  //товарищ Зюзин пока его игнорирует
-  //как дальше с этим жить?
 }
