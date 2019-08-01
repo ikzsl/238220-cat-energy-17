@@ -22,7 +22,7 @@
 }
 
 .contacts__wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 320px;
   position: absolute;
   top: -78px;
@@ -118,7 +118,7 @@
   width: 55px;
   height: 53px;
   background-image: url("../img/map-pin.png");
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: contain;
   top: 185px;
   left: 130px;
@@ -135,9 +135,7 @@ background-repeat: no-repeat;
 
 @media (min-width: $desktop-width) {
   .contacts__map-image::before {
-
     top: 150px;
     left: 1000px;
-
   }
 }
