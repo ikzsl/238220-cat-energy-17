@@ -1,17 +1,143 @@
 .contacts {
   margin: 0 auto;
   max-width: 320px;
-
+  position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    max-width: $tablet-width;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .contacts {
+    max-width: 1440px;
+  }
+}
 
-
-.contacts__map-image {
-
-
+.contacts__map-image img {
   display: block;
   background-color: #f7f7f7;
-  
+}
 
+.contacts__wrapper {
+  background-color: #fff;
+  width: 320px;
+  position: absolute;
+  top: -78px;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    position: static;
+
+    justify-content: space-between;
+    width: 622px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+
+    margin: 0;
+    justify-content: flex-start;
+  }
+}
+
+.contacts__headline {
+  font-family: $font-head;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  width: 125px;
+
+  margin: 0;
+  padding: 30px 0 24px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__headline {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    width: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__headline {
+    padding: 65px 0 60px 75px;
+    width: 155px;
+  }
+}
+
+.contacts__address {
+  font-family: $font-content;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 138px;
+
+  margin: 0;
+  padding: 30px 0 25px 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    width: 155px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 65px 0 60px 95px;
+    width: 155px;
+    text-align: left;
+  }
+}
+
+.contacts__map-image::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 53px;
+  background-image: url("../img/map-pin.png");
+background-repeat: no-repeat;
+  background-size: contain;
+  top: 185px;
+  left: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map-image::before {
+    width: 120px;
+    height: 120px;
+    top: 285px;
+    left: 325px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map-image::before {
+
+    top: 150px;
+    left: 1000px;
+
+  }
 }

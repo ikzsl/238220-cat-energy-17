@@ -3,12 +3,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs{
-
+  .programs {
     margin-bottom: 44px;
   }
 }
-
 
 .programs__header {
   display: flex;
@@ -166,19 +164,17 @@
 
 @media (min-width: $tablet-width) {
   .programs__can {
-line-height: 0;
-margin: 0;
-font-size: 0;
+    line-height: 0;
+    margin: 0;
+    font-size: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .programs__can img {
     margin-top: -22px;
-
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .programs__can img {
@@ -193,7 +189,6 @@ font-size: 0;
   .programs__image-container {
     margin-top: -58px;
     align-self: center;
-
   }
 }
 
@@ -216,7 +211,6 @@ font-size: 0;
   margin: 0;
   padding: 0;
   margin-bottom: 2px;
-
 }
 
 @media (min-width: $desktop-width) {
@@ -231,6 +225,5 @@ font-size: 0;
 
   .programs__list-item {
     margin: 0;
-
   }
 }

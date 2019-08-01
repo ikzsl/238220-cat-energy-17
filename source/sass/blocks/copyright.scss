@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #cdcdcd;
-  padding-top: 15px;
+  padding-top: 22px;
   cursor: pointer;
-  width: 286px;
+  max-width: 320px;
 
   & svg {
     fill: #444444;
