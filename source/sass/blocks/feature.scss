@@ -12,7 +12,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-end;
   }
 }
@@ -70,14 +70,14 @@
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 
     min-height: 230px;
-    width: 324px;
+    width: 220px;
     counter-increment: item;
-
-    padding: 68px 70px 0 0;
-    margin-bottom: 88px;
+    padding: 0;
+    padding-bottom: 40px;
+    margin-bottom: 87px;
+    margin-right: 105px;
 
     font-size: 16px;
     line-height: 24px;
@@ -92,7 +92,7 @@
       width: 80px;
       height: 80px;
       left: 0;
-      top: 0;
+      top: -114px;
     }
 
     &::after {
@@ -102,8 +102,8 @@
       color: #f2f2f2;
       font-size: 281px;
       font-family: $font-head;
-      top: 90px;
-      left: 110px;
+      top: -25px;
+      right: 85px;
       width: 20px;
       height: 20px;
       z-index: -1;
@@ -116,7 +116,12 @@
     min-height: 230px;
     width: 245px;
     padding: 0;
-    padding-top: 65px;
-    margin-bottom: 0;
+
+    margin: 0;
+
+    &::after {
+      top: -25px;
+      right: 110px;
+    }
   }
 }
