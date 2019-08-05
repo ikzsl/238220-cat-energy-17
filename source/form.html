@@ -46,10 +46,10 @@
             class="contacts__address-city">Санкт-Петербург</span>
       </div>
       <a href="map.html" class="contacts__map-link">
-        <picture class="contacts__map-image">
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img src="img/bg-map-mobile@1x.png" alt="Мы на карте">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img  class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Мы на карте">
         </picture>
 
       </a>
