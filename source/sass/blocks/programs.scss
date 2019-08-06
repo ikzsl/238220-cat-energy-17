@@ -179,13 +179,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs__can img {
+  .programs__can {
     margin-top: -22px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .programs__can img {
+  .programs__can {
     align-self: center;
     margin-top: 150px;
     margin-left: -160px;
