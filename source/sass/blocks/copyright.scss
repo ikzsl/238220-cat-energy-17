@@ -10,11 +10,11 @@
   cursor: pointer;
   max-width: 320px;
 
-  & svg {
+  & path {
     fill: #444444;
   }
 
-  &:hover svg {
+  &:hover path {
     fill: $leaf;
   }
 
@@ -22,7 +22,7 @@
     color: rgba(68, 68, 68, 0.3);
   }
 
-  &:active svg {
+  &:active path {
     fill: $leaf;
     opacity: 0.3;
   }
