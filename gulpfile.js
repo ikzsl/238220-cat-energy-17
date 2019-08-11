@@ -16,6 +16,8 @@ var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+
 
 // Optimize HTML
 gulp.task("minify-html", function () {
@@ -24,7 +26,14 @@ gulp.task("minify-html", function () {
       collapseWhitespace: true, // удаляем все переносы
       removeComments: true // удаляем все комментарии
     }))
-    .pipe(gulp.dest("build")); // оптимизированные файлы .html переносим на продакшен
+    .pipe(gulp.dest("build")); // оптимизированные файлы .html сохраняем в build
+});
+
+gulp.task("minify-js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+
 });
 
 gulp.task("css", function () {
@@ -112,5 +121,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify-html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify-html", "minify-js"));
 gulp.task("start", gulp.series("build", "server"));
