@@ -121,15 +121,19 @@
 
 @media (min-width: $desktop-width) {
   .feature__item {
-    min-height: 230px;
     width: 245px;
     padding: 0;
-
     margin: 0;
+    margin-bottom: 110px;
+    display: block;
+    min-height: 10px;
 
     &::after {
       top: -25px;
       right: 110px;
+    }
+    &:nth-child(n + 2) {
+      margin-bottom: 0;
     }
   }
 }

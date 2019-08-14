@@ -67,9 +67,11 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    align-self: center;
+
 
     margin: 0;
-    margin-left: 80px;
+    // margin-left: 9vw;
     margin-bottom: 42px;
   }
 }
@@ -95,7 +97,7 @@
 
 @media (min-width: $desktop-width) {
   .programs__slogan {
-    margin-left: 80px;
+    margin-left: 0;
     margin-bottom: 52px;
   }
 }
@@ -127,7 +129,7 @@
 @media (min-width: $desktop-width) {
   .programs__choose {
     margin: 0;
-    margin-left: 80px;
+    align-self: center
   }
 }
 
@@ -160,15 +162,22 @@
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
-    width: 50vw;
     align-self: center;
     min-height: 300px;
+    width: 41vw;
+    padding-left: 9vw;
   }
 }
 
 .programs__image-container {
   margin-top: -140px;
 }
+
+// @media (min-width: $desktop-width) {
+//   .programs__image-container {
+//     width: 50vw;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .programs__can {
