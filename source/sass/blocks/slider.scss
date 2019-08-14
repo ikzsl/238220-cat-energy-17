@@ -1,0 +1,180 @@
+.slider {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100vw;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-bottom: 0;
+  }
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider__slides {
+  width: 700px;
+  transition: transform 0.8s ease;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__slides {
+    width: 1380px;
+    margin-bottom: 10px;
+  }
+}
+
+.slider__inner {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__inner {
+    width: 708px;
+
+    margin-top: -170px;
+  }
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__controls {
+    margin-bottom: 70px;
+  }
+}
+
+.slider__controls label {
+  display: inline-block;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  margin: 0 20px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__controls label {
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+    padding: 5px 0;
+    align-self: center;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+// #btn-1:checked ~ .slider__controls label[for="btn-1"]{
+//   background-color: red;
+// }
+
+// #btn-2:checked ~ .slider__controls label[for="btn-2"]{
+//   background-color: red;
+// }
+
+#btn-1:checked ~ .slider__inner .slider__slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider__inner .slider__slides {
+  transform: translate(-320px);
+}
+
+@media (min-width: $tablet-width) {
+  #btn-1:checked ~ .slider__inner .slider__slides {
+    transform: translate(15px);
+  }
+
+  #btn-2:checked ~ .slider__inner .slider__slides {
+    transform: translate(-675px);
+  }
+}
+
+#btn-1:checked ~ .slider__controls .slider__scale-point {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider__controls .slider__scale-point {
+  left: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  #btn-2:checked ~ .slider__controls .slider__scale-point {
+    left: auto;
+    right: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  #btn-1:checked ~ .slider__controls label[for="btn-1"] {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  #btn-2:checked ~ .slider__controls label[for="btn-2"] {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.slider__scale {
+  width: 82px;
+  height: 12px;
+  border: 1px solid $pinkish-grey;
+  border-radius: 6px;
+  background-color: $white;
+  position: relative;
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__scale {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
+}
+
+.slider__scale-point {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 35px;
+  height: 6px;
+  background-color: $leaf;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__scale-point {
+    top: -17px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 15px #ffffff;
+    border-radius: 50%;
+    background-color: $leaf;
+  }
+}

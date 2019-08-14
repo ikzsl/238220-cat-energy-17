@@ -111,6 +111,14 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .feature__item:nth-child(n + 2) {
+    margin-bottom: 130px;
+    padding: 0;
+    min-height: auto;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .feature__item {
     min-height: 230px;

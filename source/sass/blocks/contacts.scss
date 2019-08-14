@@ -1,7 +1,9 @@
 .contacts {
   margin: 0 auto;
-  max-width: 320px;
+  min-width: 320px;
   position: relative;
+  background-image: url("build/img/bg-map-mobile@1x.png");
+
 }
 
 @media (min-width: $tablet-width) {
@@ -17,12 +19,17 @@
 }
 
 .contacts__map-image {
+  width: 100vw;
+  height: 400px;
   display: block;
   background-color: #f7f7f7;
+
+
 }
 
 .contacts__wrapper {
   background-color: #ffffff;
+
   width: 320px;
   position: absolute;
   top: -78px;
@@ -112,30 +119,11 @@
   }
 }
 
-.contacts__map-image::before {
-  position: absolute;
-  content: "";
-  width: 55px;
-  height: 53px;
-  background-image: url("../img/map-pin.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 185px;
-  left: 130px;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts__map-image::before {
-    width: 120px;
-    height: 120px;
-    top: 285px;
-    left: 325px;
-  }
-}
 
 @media (min-width: $desktop-width) {
-  .contacts__map-image::before {
-    top: 150px;
-    left: 1000px;
+    .contacts__map-image {
+
+      width: 100% ;
+      overflow: visible;
+    }
   }
-}

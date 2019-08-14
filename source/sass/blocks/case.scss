@@ -1,11 +1,13 @@
 .case {
   background-color: #f2f2f2;
-  margin-bottom: 78px;
+
+  margin-bottom: 62px;
 }
 
 @media (min-width: $tablet-width) {
   .case {
     margin-bottom: 60px;
+    background-color: $white;
   }
 }
 
@@ -15,12 +17,79 @@
   }
 }
 
+.case__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .case__wrapper {
+    flex-direction: row;
+  }
+}
+
 .case__headline {
   font-family: $font-head;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .case__headline {
+    width: 708px;
+    font-size: 60px;
+    margin-bottom: 63px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case__headline {
+    width: 1220px;
+  }
+}
+
+.case__container {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .case__container {
+    width: 708px;
+    margin-bottom: 255px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case__container {
+    width: 570px;
+    background-color: #f2f2f2;
+    margin-bottom: 0;
+    padding-top: 75px;
+  }
 }
 
 .case__desc {
   @include content;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .case__desc {
+    @include content-tablet;
+    padding-right: 10px;
+    margin-bottom: 55px;
+  }
+}
+
+.case__foto-after {
+  background-color: red;
 }

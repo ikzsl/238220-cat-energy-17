@@ -1,0 +1,146 @@
+// @media (min-width: $tablet-width) {
+//   .data-table {
+
+//   }
+// }
+
+.data-table tbody {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table tbody {
+    flex-wrap: nowrap;
+    width: 708px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-table tbody {
+    flex-wrap: wrap;
+    width: 570px;
+  }
+}
+
+.data-table__item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table__item {
+
+    margin: 0;
+  }
+}
+
+.data-table__value {
+  border: 1px solid $pinkish-grey;
+  border-radius: 3px;
+  min-width: 122px;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table__value {
+    min-width: 160px;
+
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 17px;
+  }
+}
+
+.data-table__field {
+  position: absolute;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $greyish-brown;
+  text-align: center;
+  background-color: #f2f2f2;
+
+  bottom: -16px;
+  left: 22px;
+  width: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table__field {
+    bottom: -4px;
+    left: 18px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+    min-width: 130px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-table__field {
+    background-color: #f2f2f2;
+  }
+}
+
+.data-table__item-cost {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table__item-cost {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    font-size: 20px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-table__item-cost {
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.data-table__field-cost,
+.data-table__value-cost {
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .data-table__field-cost,
+  .data-table__value-cost {
+    align-self: flex-end;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-table__field-cost,
+  .data-table__value-cost {
+    align-self: center;
+  }
+}
