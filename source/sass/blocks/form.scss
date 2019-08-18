@@ -1,0 +1,216 @@
+.form {
+  margin-bottom: 100px;
+}
+
+.form__headline {
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+
+  margin-left: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__headline {
+    font-size: 60px;
+
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__headline {
+    margin-left: 40px;
+  }
+}
+
+
+
+.form__desc {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+  width: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__desc {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.form__main {
+  width: calc(100vw-40px);
+}
+
+@media (min-width: $tablet-width) {
+  .form__main {
+    width: calc(100vw-140px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__main {
+    width: calc(100vw-80px);
+  }
+}
+
+.form__field-label {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form__fieldset-headline {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  padding: 20px;
+  margin: 20px;
+}
+
+fieldset {
+  border: none;
+  border-top: 3px solid $leaf;
+  width: 100vw;
+}
+
+.form__program-choise {
+  border: 1px solid #ededed;
+}
+
+.form__programs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  // width: calc(100vw - 40px);
+  margin: 0 auto;
+  align-content: center;
+}
+
+// @media (min-width: $tablet-width) {
+//   .form__wrapper {
+//    width: calc(100vw - 138px);
+//   }
+// }
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    flex-direction: row;
+    // width: calc(100vw - 80px);
+    justify-content: space-between;
+  }
+}
+
+.form__cat-data {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 50%;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__row input {
+  width: 100%;
+}
+
+.form__field-label {
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+.form__row input {
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    &:valid {
+      border: solid 2px $greyish-brown;
+
+      & ~ svg {
+        fill: green;
+      }
+    }
+
+    &:invalid {
+      border: solid 2px #ff8282;
+
+      & ~ svg {
+        fill: red;
+      }
+    }
+  }
+}
+
+// Контактные данные
+
+.form__owner-data-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .form__owner-data-list {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+}
+//Дополнительно
+
+.form__addition-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+//Отправить заявку
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    flex-direction: row;
+  }
+}
