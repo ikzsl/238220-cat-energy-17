@@ -26,8 +26,6 @@
   }
 }
 
-
-
 .form__desc {
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 14px;
@@ -44,20 +42,19 @@
   }
 }
 
-
 .form__main {
-  width: calc(100vw-40px);
+  width: calc(100vw - 40px);
 }
 
 @media (min-width: $tablet-width) {
   .form__main {
-    width: calc(100vw-140px);
+    width: calc(100vw - 140px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__main {
-    width: calc(100vw-80px);
+    width: calc(100vw - 80px);
   }
 }
 
@@ -67,7 +64,11 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+
+  padding-right: 5px;
+  white-space: nowrap;
 }
+
 
 @media (min-width: $tablet-width) {
   .form label {
@@ -99,11 +100,7 @@ fieldset {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
-
-
-
 
 .form__wrapper {
   display: flex;
@@ -144,14 +141,7 @@ fieldset {
 
 .form__row input {
   width: 100%;
-}
 
-.form__field-label {
-  padding-right: 5px;
-  white-space: nowrap;
-}
-
-.form__row input {
   border: 1px solid #e6e6e6;
 
   &:hover {
@@ -200,7 +190,6 @@ fieldset {
   padding: 0;
   margin: 0;
 }
-
 
 //Отправить заявку
 
