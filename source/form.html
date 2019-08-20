@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
 
 </head>
 
@@ -92,6 +97,7 @@
           </fieldset>
         </div>
         <!-- Контактные данные (владельца кота) -->
+
         <fieldset class="form__cat-owner-data">
           <legend class="form__fieldset-headline">Контактные данные (владельца кота)</legend>
           <ul class="form__owner-data-list">
@@ -114,15 +120,12 @@
           </ul>
         </fieldset>
 
-        <!-- Комментарий -->
+
+            <!-- Комментарий -->
+            <hr>
         <fieldset class="form__comment">
           <legend class="form__fieldset-headline">Комментарий</legend>
-          <label class="form__fieldset-headline"></label>
-
           <textarea name="comment">Расскажите обо всех повадках кота</textarea>
-
-
-
         </fieldset>
 
 
@@ -231,8 +234,50 @@
       </div>
     </div>
   </footer>
+  <div id="YMapsID" style="width:100%;height:400px"></div>
 
   <script src="js/app.js"></script>
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+      // Создает экземпляр карты и привязывает его к созданному контейнеру
+      var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+
+
+      if (window.matchMedia('(max-width: 1300px)').matches) {
+  // do functionality on screens smaller than 768px
+  map.setCenter(new YMaps.GeoPoint(30.32305450, 59.93863106), 16);}
+  else  {
+    map.setCenter(new YMaps.GeoPoint(30.31305450, 59.93863106), 16);
+  }
+
+      // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+
+
+      var placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.32305450, 59.93863106), {
+        iconImageHref: '../img/map-pin.png',
+        iconImageSize: [40, 41],
+        draggable: 1,
+        hintOptions: {
+          maxWidth: 100,
+          showTimeout: 200,
+          offset: new YMaps.Point(5, 5)
+        },
+        balloonOptions: {
+          maxWidth: 70,
+          hasCloseButton: false,
+          mapAutoPan: 0
+        }
+      });
+      placemark.name = "Название";
+      placemark.description = "Описание";
+      map.addOverlay(placemark);
+
+    })
+  </script>
+
 </body>
 
 </html>

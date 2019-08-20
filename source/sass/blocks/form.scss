@@ -27,7 +27,7 @@
 }
 
 .form__desc {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
   font-size: 14px;
   line-height: 18px;
   color: #111111;
@@ -59,7 +59,7 @@
 }
 
 .form__field-label {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-family: $font-head;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -69,27 +69,11 @@
   white-space: nowrap;
 }
 
-
 @media (min-width: $tablet-width) {
   .form label {
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.form__fieldset-headline {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  color: #111111;
-  padding: 20px;
-  margin: 20px;
-}
-
-fieldset {
-  border: none;
-  border-top: 3px solid $leaf;
-  width: 100vw;
 }
 
 .form__program-choise {
@@ -167,7 +151,38 @@ fieldset {
   }
 }
 
-// Контактные данные
+// Контактные
+
+.form__cat-owner-data {
+  position: relative;
+  display: block;
+  z-index: 1;
+  background-color: #ffffff;
+  border: none;
+  border-top: 3px solid $leaf;
+}
+
+// .form__cat-owner-data::before {
+//   position: absolute;
+//   content: "";
+//     width: 900px;
+//     height: 3px;
+//     top: -75px;
+//     right: 0;
+//     background-color: $leaf;
+//     z-index: -1;
+// }
+
+.form__fieldset-headline {
+  font-family: $font-head;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  padding: 20px;
+  margin: 20px;
+  width: 222px;
+  background-color: #ffffff;
+}
 
 .form__owner-data-list {
   list-style: none;
@@ -202,4 +217,14 @@ fieldset {
   .form__submit {
     flex-direction: row;
   }
+}
+
+hr {
+  position: absolute;
+  border: none;
+  height: 3px;
+  width: 100vw;
+  background-color: $leaf;
+  top: 500px;
+  z-index: 1;
 }

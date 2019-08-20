@@ -173,11 +173,11 @@
   margin-top: -140px;
 }
 
-// @media (min-width: $desktop-width) {
-//   .programs__image-container {
-//     width: 50vw;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .programs__image-container {
+    min-height: 696px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .programs__can {
