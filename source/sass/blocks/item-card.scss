@@ -74,6 +74,7 @@
   .item-card__desc {
     font-size: 16px;
     text-align: center;
+    width: 170px;
   }
 }
 
@@ -165,6 +166,12 @@
 @media (min-width: $tablet-width) {
   .item-card__headline-show-all {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-card__headline-show-all {
+    width: 140px;
   }
 }
 
