@@ -31,7 +31,7 @@
 
     justify-content: center;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -140px;
     margin-bottom: 80px;
   }
 }
@@ -56,7 +56,7 @@
     text-align: left;
     min-width: 450px;
     margin: 0;
-    margin-left: 15vw;
+    margin-left: calc((100vw - 528px) / 2);
     margin-bottom: 40px;
   }
 }
@@ -68,7 +68,6 @@
     line-height: 60px;
     text-align: left;
     align-self: center;
-
 
     margin: 0;
     // margin-left: 9vw;
@@ -90,8 +89,8 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-left: 15vw;
-    margin-bottom: 45px;
+    margin-left: calc((100vw - 528px) / 2);
+    margin-bottom: 50px;
   }
 }
 
@@ -120,7 +119,7 @@
     margin: 0;
     z-index: 10;
     min-width: 225px;
-    margin-left: 15vw;
+    margin-left: calc((100vw - 528px) / 2);
     padding: 16px 0;
     width: 245px;
   }
@@ -144,13 +143,11 @@
   width: 100%;
 }
 
-
 @media (min-resolution: 2dppx) {
   .programs__wrapper {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .programs__wrapper {
@@ -189,7 +186,7 @@
 
 @media (min-width: $tablet-width) {
   .programs__can {
-    margin-top: -22px;
+    margin-top: -25px;
   }
 }
 
@@ -241,7 +238,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: $desktop-width;
+    width: 1220px;
     margin: 0 auto;
     margin-bottom: 75px;
   }

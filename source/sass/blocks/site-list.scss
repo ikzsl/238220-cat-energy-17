@@ -31,6 +31,18 @@
   min-width: 320px;
 
   border-top: 1px solid #f2f2f2;
+
+  &:hover {
+    color: $black-60-two;
+  }
+
+  &:focus {
+    color: $black-60-two;
+  }
+
+  &:active {
+    color: $black-30-two;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +76,18 @@
 
     &--active {
       border-bottom: 2px solid $white;
+    }
+
+    &:hover {
+      color: $white-60-three;
+    }
+
+    &:focus {
+      color: $white-60-three;
+    }
+
+    &:active {
+      color: $white-30-three;
     }
   }
 }

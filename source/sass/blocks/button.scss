@@ -10,10 +10,36 @@
 
   &--grey {
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: $greyish-30-brown;
+    }
   }
 
   &--green {
     background-color: #68b738;
     color: #ffffff;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: $white-30-three;
+    }
   }
 }

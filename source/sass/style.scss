@@ -20,15 +20,17 @@
 @import "blocks/addition.scss";
 @import "blocks/addition-item-card.scss";
 @import "blocks/contacts.scss";
-@import "blocks/data-table.scss";
+@import "blocks/data.scss";
 @import "blocks/slider.scss";
 @import "blocks/form.scss";
 @import "blocks/program-choise.scss";
 
+html {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #ffffff;
-  min-width: 320px;
+  margin: 0;
 }
 
 a {

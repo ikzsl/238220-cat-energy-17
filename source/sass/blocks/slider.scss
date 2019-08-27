@@ -27,12 +27,20 @@
   width: 700px;
   transition: transform 0.8s ease;
   margin-bottom: 30px;
+  transform: translate(-20px);
 }
 
 @media (min-width: $tablet-width) {
   .slider__slides {
     width: 1386px;
     margin-bottom: 10px;
+    transform: translate(15px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__slides {
+    transform: translate(-40px);
   }
 }
 
@@ -202,5 +210,17 @@
     border: solid 14px #ffffff;
     border-radius: 50%;
     background-color: $leaf;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      box-shadow: 0 6px 7px 0 $black-30-two, 0 0 0 2px $leaf;
+    }
   }
 }
