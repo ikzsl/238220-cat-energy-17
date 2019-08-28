@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 145px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
   line-height: 60px;
   color: #111111;
   margin: 0;
-  margin-left: 20px;
+  margin-left: calc((100vw - 280px) / 2);
   margin-bottom: 25px;
   padding-top: 14px;
   border-top: 1px solid #f2f2f2;
@@ -33,7 +33,7 @@
   .form__headline {
     padding: 0;
     font-size: 60px;
-    margin-left: 30px;
+    margin-left: calc((100vw - 708px) / 2);
     border: none;
     margin-bottom: 55px;
   }
@@ -53,7 +53,7 @@
   text-transform: uppercase;
   width: 226px;
   margin: 0;
-  margin-left: 20px;
+  margin-left: calc((100vw - 280px) / 2);
   margin-bottom: 40px;
 }
 
@@ -62,7 +62,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 322px;
-    margin-left: 70px;
+    margin-left: calc((100vw - 630px) / 2);
     margin-bottom: 65px;
   }
 }
@@ -92,7 +92,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 40px);
+  width: 280px;
   box-sizing: border-box;
 
   margin: 0 auto;
@@ -102,7 +102,7 @@
 
 @media (min-width: $tablet-width) {
   .form__wrapper {
-    width: calc(100% - 138px);
+    width: 630px;
     margin-bottom: 75px;
   }
 }
@@ -481,6 +481,7 @@ input:checked ~ .form__field-label {
   width: 222px;
   background-color: $white;
   margin-bottom: 35px;
+  margin-left: calc((100vw - 320px) / 2);
 }
 
 @media (min-width: $tablet-width) {
@@ -491,6 +492,7 @@ input:checked ~ .form__field-label {
     margin: 0 27px;
     padding: 0 40px;
     margin-bottom: 75px;
+    margin-left: calc((100vw - 708px) / 2);
   }
 }
 
@@ -509,13 +511,13 @@ input:checked ~ .form__field-label {
   display: flex;
   flex-direction: column;
 
-  width: calc(100vw - 40px);
+  width: 280px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .form__owner-data-list {
-    width: calc(100vw - 138px);
+    width: 630px;
   }
 }
 
@@ -582,14 +584,14 @@ input:checked ~ .form__field-label {
 
 .form__comment .form__fieldset-headline {
   width: auto;
-  margin-left: -2px;
   padding-right: 24px;
+  margin-left: calc((100vw - 320px) / 2);
 }
 
 @media (min-width: $tablet-width) {
   .form__comment .form__fieldset-headline {
-    margin-left: 30px;
     padding-right: 40px;
+    margin-left: calc((100vw - 708px) / 2);
   }
 }
 
@@ -601,8 +603,8 @@ input:checked ~ .form__field-label {
 }
 
 .form__comment textarea {
-  width: calc(100vw - 40px);
-  margin: 0 20px;
+  width: 280px;
+  margin: 0 auto;
   padding: 13px;
   font-family: $font-head;
   font-size: 16px;
@@ -617,8 +619,8 @@ input:checked ~ .form__field-label {
 
 @media (min-width: $tablet-width) {
   .form__comment textarea {
-    width: calc(100vw - 140px);
-    margin: 0 70px;
+    width: 630px;
+    margin: 0 auto;
     padding: 10px 18px;
     font-size: 20px;
     line-height: 30px;
@@ -670,15 +672,15 @@ input:checked ~ .form__field-label {
   width: auto;
   margin: 0;
   padding: 0 20px;
-  margin-left: -5px;
   margin-bottom: 41px;
+  margin-left: calc((100vw - 320px) / 2);
 }
 
 @media (min-width: $tablet-width) {
   .form__addition .form__fieldset-headline {
     padding: 0 40px;
-    margin-left: 26px;
     margin-bottom: 46px;
+    margin-left: calc((100vw - 708px) / 2);
   }
 }
 
@@ -695,8 +697,9 @@ input:checked ~ .form__field-label {
 
   list-style: none;
   padding: 0;
+  padding-left: 65px;
   margin: 0 auto;
-  width: calc(100vw - 130px);
+  width: 280px;
   min-height: 146px;
 }
 
@@ -705,8 +708,8 @@ input:checked ~ .form__field-label {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    width: calc(100vw - 138px);
+    padding-left: 2px;
+    width: 630px;
   }
 }
 

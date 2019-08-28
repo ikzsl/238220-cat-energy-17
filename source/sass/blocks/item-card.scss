@@ -5,10 +5,11 @@
   align-items: flex-start;
   justify-content: center;
   align-content: flex-start;
-
+  margin: 0 auto;
   margin-bottom: 0;
-  padding: 0 20px 0 20px;
+
   border-bottom: 1px solid #ededed;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +18,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    margin: 0;
     margin-top: 142px;
     background-color: #f2f2f2;
     width: 324px;
